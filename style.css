@@ -137,6 +137,39 @@ section.pricing {
     .padding {
         padding: 1rem
     }
+
+}
+
+@media  (max-width : 400px) {
+    .opt{
+        background: #141eb6;
+        border-top-left-radius: 80%;
+        border-bottom-right-radius: 60%;
+        padding-left: 52px;
+        padding-right: 52px;
+        max-height: 30vh;
+        overflow-wrap: hidden;
+    }
+
+    .img_h{
+        max-height: 24vh;
+    }
+
+    .display-4 {
+        font-size: calc(1.275rem + .3vw);
+    }
+    .mb-5{
+        margin-bottom: 1rem !important;
+    }
+    .h4{
+        font-size: calc(.275rem + .3vw);
+    }
+
+
+    .nav{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .padding {
