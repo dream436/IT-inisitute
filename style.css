@@ -179,12 +179,11 @@ section.pricing {
 @media (max-width : 400px) {
     .opt {
         background: #141eb6;
-        border-top-left-radius: 80%;
-        border-bottom-right-radius: 60%;
+        border-top-left-radius: 47%;
+        border-bottom-right-radius: 57%;
         padding-left: 52px;
         padding-right: 52px;
         max-height: 30vh;
-        overflow-wrap: hidden;
     }
 
     .img_h {
@@ -223,10 +222,13 @@ section.pricing {
         text-shadow: -2px 1px black;
     }
     .font2{
-        margin-top: -34px;
-        font-size: 12px;
+    
     }
 
+    .list-unstyled{
+        padding-top: 32px;
+        padding-bottom: 30px;
+    }
     .logo {
         width: 13vw;
     }
