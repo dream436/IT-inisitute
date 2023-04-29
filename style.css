@@ -189,8 +189,7 @@ section.pricing {
 
     .img_h {
         max-height: 30vh;
-        position: absolute;
-        z-index: 1;
+        
     }
 
     .display-4 {
