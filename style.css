@@ -139,6 +139,10 @@ section.pricing {
 
 /* Hover Effects on Card */
 
+
+.hit{
+    max-height: 96vh; overflow-y: hidden;
+}
 @media (min-width: 992px) {
     .pricing .card:hover {
         margin-top: -.25rem;
@@ -223,6 +227,15 @@ section.pricing {
     }
     .font2{
     
+    }
+
+
+    .img{
+        top: 0;
+    }
+
+    .hit{
+        max-height: 100%; overflow-y: hidden;
     }
 
     .list-unstyled{
