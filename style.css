@@ -22,7 +22,7 @@
 }
 
 .shado {
-    box-shadow: 1px 2px 2px 0px #575555;
+    box-shadow: 1px 2px 2px 0px #111111;
 }
 
 .logo {
@@ -455,7 +455,7 @@ header h2 {
 	content: "" clear : both;
 } */
 nav.menu {
-    background: purple;
+    background: #141EB6;
     position: relative;
     min-height: 45px;
     height: 100%;
@@ -499,14 +499,14 @@ nav.menu {
 }
 
 .xs-menu-cont>a {
-    background: none repeat scroll 0 0 #800080;
+    background: none repeat scroll 0 0 #141EB6;
     border-radius: 3px;
     padding: 3px 6px;
     display: block;
-    border-bottom: 1px solid #800080;
-    box-shadow: 0 1px 2px #800080;
-    -webkit-box-shadow: 0 1px 2px #800080;
-    -moz-box-shadow: 0 1px 2px #800080;
+    border-bottom: 1px solid #141EB6;
+    box-shadow: 0 1px 2px #141EB6;
+    -webkit-box-shadow: 0 1px 2px #141EB6;
+    -moz-box-shadow: 0 1px 2px #141EB6;
 }
 
 .xs-menu-cont>a:hover {
@@ -517,7 +517,7 @@ nav.menu {
     color: #fff;
     padding: 14px 30px;
     border-bottom: 1px solid #ccc;
-    background: #800080;
+    background: #141EB6;
 
 }
 
