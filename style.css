@@ -78,12 +78,12 @@ nav li:hover {
     border-bottom-right-radius: 60%;
     padding-left: 52px;
     padding-right: 52px;
-    max-height: 129vh;
+    max-height: 90vh;
     overflow-wrap: hidden;
 }
 
 .img_h {
-    max-height: 104vh;
+    max-height: 90vh;
 }
 
 
