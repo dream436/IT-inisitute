@@ -30,7 +30,7 @@
 }
 
 .logo2 {
-    width: 8vw;
+    width: 9vw;
 }
 
 
@@ -51,6 +51,7 @@
 
 .font2 {
     font-family: 'Baloo 2', cursive;
+    font-size: 20px;
 }
 
 body {
