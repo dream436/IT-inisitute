@@ -42,24 +42,24 @@ function openreg (){
 function contactpage(){
 
     var locat = window.location.origin
-    window.location.href = `${locat}/contact.html`
+    window.location.href = `/IT-inisitute/contact.html`
 
 }
 
 function home(){
     // var locat = window.location.origin
-    window.location.href = '/'
+    window.location.href = '/IT-inisitute/'
     
 }
 
 function about(){
     var locat = window.location.origin
-    window.location.href = `${locat}/aboutus.html`
+    window.location.href = `/IT-inisitute/aboutus.html`
     
 }
 
 function teacher(){
     var locat = window.location.origin
-    window.location.href = `${locat}/teacher.html`
+    window.location.href = `/IT-inisitute/teacher.html`
     
 }
