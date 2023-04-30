@@ -34,3 +34,18 @@ var swiper = new Swiper('.blog-slider', {
       clickable: true,
     }
   });
+
+
+function student (){
+    let reqform = document.getElementById('student_reg')
+
+    reqform.classList.add('d-none')
+    
+}
+
+function openreg (){
+    let reqform = document.getElementById('student_reg')
+    reqform.classList.remove('d-none')
+    reqform.classList.add('d-block')
+    
+}
