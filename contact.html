@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div>
+        <header class="bg-white">
+            <div>
+                <div class="d-flex justify-content-between w-100 align-items-center">
+
+                    <div>
+                        <img src="logo.jpeg" alt="" class="logo my-2 me-5 ms-3" srcset="">
+                    </div>
+
+                    <div class="text-center">
+                        <h2 class="font">IT INSTITUTE</h2>
+                        <span class="font2 h5">Nursery Teacher Training Diploma</span>
+                        <span class="font2">(भारत सरकार द्वारा मान्यता प्राप्त)</span>
+                    </div>
+                    <div>
+                        <img src="https://cdn.dribbble.com/users/320908/screenshots/6671089/beti.jpg" class="logo2"
+                            alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <nav class=" d-flex justify-content-center shado">
+            <div class="xs-menu-cont w-100">
+                <a id="menutoggle" class="align-items-center p-2">
+                    <i class="fa-solid fa-bars text-white "></i>
+                </a>
+                <nav class="xs-menu displaynone">
+                    <ul>
+                        <li class="activee" onclick="home()">
+                            <a href="#">Home</a>
+                        </li>
+        
+                        <li>
+                            <a href="#">Faculty</a>
+                        </li>
+                        <li onclick="about()">
+                            <a href="#">About Us</a>
+                        </li>
+                        <li onclick="contactpage()">
+                            <a href="contact.html">Contact</a>
+                        </li>
+                        <li onclick="openreg()">
+                            <a href="#">Register Now </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <nav class="menu w-100 text-center">
+                <ul>
+                    <li class="activee" onclick="home()">
+                        <a href="#">Home</a>
+                    </li>
+    
+                    <li>
+                        <a href="#">Faculty</a>
+                    </li>
+                    <li onclick="about()">
+                        <a href="#">About Us</a>
+                    </li>
+                    <li onclick="contactpage()">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li onclick="openreg()">
+                        <a href="#">Register Now </a>
+                    </li>
+                </ul>
+            </nav>
+        </nav>
+
+    </div>
+    <div class="container contact-form">
+        <div class="contact-image">
+            <img src="https://image.ibb.co/kUagtU/rocket_contact.png" alt="rocket_contact" />
+        </div>
+        <form method="post">
+            <h3>Drop Us a Message</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="text" name="txtName" class="form-control" placeholder="Your Name *" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="txtEmail" class="form-control" placeholder="Your Email *" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *"
+                            value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <textarea name="txtMsg" class="form-control" placeholder="Your Message *"
+                            style="width: 100%; height: 150px;"></textarea>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+      <!-- Site footer -->
+      <footer class="site-footer">
+        <div class="container">
+            <div class="row d-flex justify-content-between">
+                <div class="col-sm-12 col-md-6">
+                    <h6>About</h6>
+                    <p class="text-justify">This is a Sample site made by Mandeep Lamba For IT institute,
+                        It institute is corporation of NTT Course , which is a Teacher Traning Course  
+                    </p>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <h6>Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li> 
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
+                        <a href="#">Mshacker</a>.
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -21,19 +21,7 @@ $(document).ready(function() {
 });
 
 
-var swiper = new Swiper('.blog-slider', {
-    spaceBetween: 30,
-    effect: 'fade',
-    loop: true,
-    mousewheel: {
-      invert: false,
-    },
-    // autoHeight: true,
-    pagination: {
-      el: '.blog-slider__pagination',
-      clickable: true,
-    }
-  });
+
 
 
 function student (){
@@ -47,5 +35,21 @@ function openreg (){
     let reqform = document.getElementById('student_reg')
     reqform.classList.remove('d-none')
     reqform.classList.add('d-block')
+    
+}
+
+
+function contactpage(){
+    window.location.href = '/contact.html'
+
+}
+
+function home(){
+    window.location.href = '/'
+    
+}
+
+function about(){
+    window.location.href = '/aboutus.html'
     
 }
