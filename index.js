@@ -40,21 +40,26 @@ function openreg (){
 
 
 function contactpage(){
-    window.location.href = '/contact.html'
+
+    var locat = window.location.origin
+    window.location.href = `${locat}/contact.html`
 
 }
 
 function home(){
+    // var locat = window.location.origin
     window.location.href = '/'
     
 }
 
 function about(){
-    window.location.href = '/aboutus.html'
+    var locat = window.location.origin
+    window.location.href = `${locat}/aboutus.html`
     
 }
 
 function teacher(){
-    window.location.href = '/teacher.html'
+    var locat = window.location.origin
+    window.location.href = `${locat}/teacher.html`
     
 }
