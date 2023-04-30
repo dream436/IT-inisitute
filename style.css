@@ -228,7 +228,9 @@ section.pricing {
     .font2{
     
     }
-
+    .price_card{
+        width: 67vw;
+    }
 
     .img{
         top: 0;
@@ -254,6 +256,9 @@ section.pricing {
 .padding {
     padding: 5rem
 }
+
+
+
 
 .card {
     position: relative;
