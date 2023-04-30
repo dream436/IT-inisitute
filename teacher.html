@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/d937303721.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="teacher.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+
+    <title>staff</title>
+</head>
+<body>
+
+    <header class="bg-white">
+        <div>
+            <div class="d-flex justify-content-between w-100 align-items-center">
+
+                <div>
+                    <img src="logo.jpeg" alt="" class="logo my-2 me-5 ms-3" srcset="">
+                </div>
+
+                <div class="text-center">
+                    <h2 class="font">IT INSTITUTE</h2>
+                    <span class="font2 h5">Nursery Teacher Training Diploma</span>
+                    <span class="font2">(भारत सरकार द्वारा मान्यता प्राप्त)</span>
+                </div>
+                <div>
+                    <img src="https://cdn.dribbble.com/users/320908/screenshots/6671089/beti.jpg" class="logo2" alt=""
+                        srcset="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class=" d-flex justify-content-center shado">
+        <div class="xs-menu-cont w-100">
+            <a id="menutoggle" class="align-items-center p-2">
+                <i class="fa-solid fa-bars text-white "></i>
+            </a>
+            <nav class="xs-menu displaynone">
+                <ul>
+                    <li class="activee" onclick="home()">
+                        <a href="#">Home</a>
+                    </li>
+    
+                    <li onclick="teacher()">
+                        <a href="#">Faculty</a>
+                    </li>
+                    <li onclick="about()">
+                        <a href="#">About Us</a>
+                    </li>
+                    <li onclick="contactpage()">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li onclick="openreg()">
+                        <a href="#">Register Now </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <nav class="menu w-100 text-center">
+            <ul>
+                <li class="activee" onclick="home()">
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li onclick="teacher()">
+                    <a href="#">Faculty</a>
+                </li>
+                <li onclick="about()">
+                    <a href="#">About Us</a>
+                </li>
+                <li onclick="contactpage()">
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li onclick="openreg()">
+                    <a href="#">Register Now </a>
+                </li>
+            </ul>
+        </nav>
+    </nav>
+
+
+
+    <section class="min-vh-100 min-vw-100 d-none " id="student_reg" style="position: fixed; z-index: 10; top: 0; background-color: rgba(0, 0, 0, 0.514);">
+        <div>
+            <div class="d-flex justify-content-end me-md-5 mt-2 text-danger" onclick="student()">
+                <div class="bg-white py-2 px-3 rounded-5">
+                    <i class="fa-solid fa-xmark text-dark"></i>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <section class="h-100">
+                    <div class="container h-100">
+                      <div class="row d-flex justify-content-center align-items-center h-100" style="width: 43vw; position: relative; z-index: 1020;">
+                        <div class="col">
+                          <div class="card card-registration my-4">
+                            <div class="row g-0">
+                              <div class="col-xl-12">
+                                <div class="card-body p-md-5 text-black">
+                                  <h3 class="mb-3 text-uppercase">Student registration form</h3>
+                  
+                                  <div class="row">
+                                    <div class="col-md-6 mb-2">
+                                      <div class="form-outline">
+                                        <input type="text" id="form3Example1m" class="form-control form-control-lg" />
+                                        <label class="form-label" for="form3Example1m">First name</label>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-6 mb-2">
+                                      <div class="form-outline">
+                                        <input type="text" id="form3Example1n" class="form-control form-control-lg" />
+                                        <label class="form-label" for="form3Example1n">Last name</label>
+                                      </div>
+                                    </div>
+                                  </div>
+                  
+                                 
+                                  <div class="form-outline mb-2">
+                                    <input type="text" id="form3Example8" class="form-control form-control-lg" />
+                                    <label class="form-label" for="form3Example8">Address</label>
+                                  </div>
+                  
+                                  <div class="d-md-flex justify-content-start align-items-center mb-2 py-2">
+                  
+                                    <h6 class="mb-0 me-4">Gender: </h6>
+                  
+                                    <div class="form-check form-check-inline mb-0 me-4">
+                                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGender"
+                                        value="option1" />
+                                      <label class="form-check-label" for="femaleGender">Female</label>
+                                    </div>
+                  
+                                    <div class="form-check form-check-inline mb-0 me-4">
+                                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender"
+                                        value="option2" />
+                                      <label class="form-check-label" for="maleGender">Male</label>
+                                    </div>
+                  
+                                    <div class="form-check form-check-inline mb-0">
+                                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="otherGender"
+                                        value="option3" />
+                                      <label class="form-check-label" for="otherGender">Other</label>
+                                    </div>
+                  
+                                  </div>
+                  
+                  
+                                  <div class="form-outline mb-2">
+                                    <input type="text" id="form3Example9" class="form-control form-control-lg" />
+                                    <label class="form-label" for="form3Example9">DOB</label>
+                                  </div>
+                  
+                                  <div class="form-outline mb-2">
+                                    <input type="text" id="form3Example97" class="form-control form-control-lg" />
+                                    <label class="form-label" for="form3Example97">Email ID</label>
+                                  </div>
+                  
+                                  <div class="d-flex justify-content-end pt-3">
+                                    <button type="button" class="btn btn-light btn-lg">Reset all</button>
+                                    <button type="button" class="btn btn-warning btn-lg ms-2">Submit form</button>
+                                  </div>
+                  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+            </div>
+        </div>
+    </section>
+
+    <div>
+        <div class="container py-5">
+            <!-- For Demo Purpose-->
+            <header class="text-center mb-5">
+              <h1 class="display-4 font-weight-bold">Our staff</h1>
+             
+              </p>
+            </header>
+           
+          
+            <!-- Second Row [Team]-->
+            <h2 class="font-weight-bold mb-2">Our Team</h2>
+            <p class="font-italic text-muted mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+          
+            <div class="row pb-5 mb-4">
+              <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <!-- Card-->
+                <div class="card shadow-sm border-0 rounded">
+                  <div class="card-body p-0"><img src="https://bootstrapious.com/i/snippets/sn-cards/profile-1_dewapk.jpg" alt="" class="w-100 card-img-top">
+                    <div class="p-4">
+                      <h5 class="mb-0">Mark Rockwell</h5>
+                      <p class="small text-muted">CEO - Consultant</p>
+                      <ul class="social mb-0 list-inline mt-3">
+                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <!-- Card-->
+                <div class="card shadow-sm border-0 rounded">
+                  <div class="card-body p-0"><img src="https://bootstrapious.com/i/snippets/sn-cards/profile-3_ybnq8v.jpg" alt="" class="w-100 card-img-top">
+                    <div class="p-4">
+                      <h5 class="mb-0">Mark Rockwell</h5>
+                      <p class="small text-muted">CEO - Consultant</p>
+                      <ul class="social mb-0 list-inline mt-3">
+                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <!-- Card-->
+                <div class="card shadow-sm border-0 rounded">
+                  <div class="card-body p-0"><img src="https://bootstrapious.com/i/snippets/sn-cards/profile-2_ujssbj.jpg" alt="" class="w-100 card-img-top">
+                    <div class="p-4">
+                      <h5 class="mb-0">Mark Rockwell</h5>
+                      <p class="small text-muted">CEO - Consultant</p>
+                      <ul class="social mb-0 list-inline mt-3">
+                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <!-- Card-->
+                <div class="card shadow-sm border-0 rounded">
+                  <div class="card-body p-0"><img src="https://res.cloudinary.com/mhmd/image/upload/v1570799922/profile-2_ujssbj.jpg" alt="" class="w-100 card-img-top">
+                    <div class="p-4">
+                      <h5 class="mb-0">Mark Rockwell</h5>
+                      <p class="small text-muted">CEO - Consultant</p>
+                      <ul class="social mb-0 list-inline mt-3">
+                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                        <li class="list-inline-item m-0"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Third Row [Profiles]-->
+            <h2 class="font-weight-bold mb-2">Active Profiles</h2>
+            <p class="font-italic text-muted mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+          
+            <div class="row pb-5 mb-4">
+          
+              <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <!-- Card-->
+                <div class="card rounded shadow-sm border-0">
+                  <div class="card-body p-0">
+                    <div class="bg-primary px-5 py-4 text-center card-img-top"><img src="https://bootstrapious.com/i/snippets/sn-cards/teacher-4.jpg" alt="..." width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
+                      <h5 class="text-white mb-0">Emma Nevoresky</h5>
+                      <p class="small text-white mb-0">Elite user</p>
+                    </div>
+                    <div class="p-4 d-flex justify-content-center">
+                      <ul class="list-inline mb-0">
+                        <li class="list-inline-item">
+                          <h5 class="font-weight-bold mb-0 d-block">241</h5><small class="text-muted"><i class="fa fa-picture-o mr-1 text-primary"></i>Photos</small>
+                        </li>
+                        <li class="list-inline-item">
+                          <h5 class="font-weight-bold mb-0 d-block">84K</h5><small class="text-muted"><i class="fa fa-user-circle-o mr-1 text-primary"></i>Followers</small>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <!-- Card-->
+                <div class="card rounded shadow-sm border-0">
+                  <div class="card-body p-0">
+                    <div class="bg-success px-5 py-4 text-center card-img-top"><img src="https://bootstrapious.com/i/snippets/sn-cards/teacher-2.jpg" alt="..." width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
+                      <h5 class="text-white mb-0">Samuel Hardy</h5>
+                      <p class="small text-white mb-0">Elite user</p>
+                    </div>
+                    <div class="p-4 d-flex justify-content-center">
+                      <ul class="list-inline mb-0">
+                        <li class="list-inline-item">
+                          <h5 class="font-weight-bold mb-0 d-block">241</h5><small class="text-muted"><i class="fa fa-picture-o mr-1 text-success"></i>Photos</small>
+                        </li>
+                        <li class="list-inline-item">
+                          <h5 class="font-weight-bold mb-0 d-block">84K</h5><small class="text-muted"><i class="fa fa-user-circle-o mr-1 text-success"></i>Followers</small>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <!-- Card-->
+                <div class="card rounded shadow-sm border-0">
+                  <div class="card-body p-0">
+                    <div class="bg-info px-5 py-4 text-center card-img-top"><img src="https://bootstrapious.com/i/snippets/sn-cards/teacher-7.jpg" alt="..." width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
+                      <h5 class="text-white mb-0">Tom Sunderland</h5>
+                      <p class="small text-white mb-0">Elite user</p>
+                    </div>
+                    <div class="p-4 d-flex justify-content-center">
+                      <ul class="list-inline mb-0">
+                        <li class="list-inline-item">
+                          <h5 class="font-weight-bold mb-0 d-block">241</h5><small class="text-muted"><i class="fa fa-picture-o mr-1 text-info"></i>Photos</small>
+                        </li>
+                        <li class="list-inline-item">
+                          <h5 class="font-weight-bold mb-0 d-block">84K</h5><small class="text-muted"><i class="fa fa-user-circle-o mr-1 text-info"></i>Followers</small>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <!-- Card-->
+                <div class="card rounded shadow-sm border-0">
+                  <div class="card-body p-0">
+                    <div class="bg-warning px-5 py-4 text-center card-img-top"><img src="https://bootstrapious.com/i/snippets/sn-cards/teacher-1.jpg" alt="..." width="100" class="rounded-circle mb-2 img-thumbnail d-block mx-auto">
+                      <h5 class="text-white mb-0">John Tarly</h5>
+                      <p class="small text-white mb-0">Elite user</p>
+                    </div>
+                    <div class="p-4 d-flex justify-content-center">
+                      <ul class="list-inline mb-0">
+                        <li class="list-inline-item">
+                          <h5 class="font-weight-bold mb-0 d-block">241</h5><small class="text-muted"><i class="fa fa-picture-o mr-1 text-warning"></i>Photos</small>
+                        </li>
+                        <li class="list-inline-item">
+                          <h5 class="font-weight-bold mb-0 d-block">84K</h5><small class="text-muted"><i class="fa fa-user-circle-o mr-1 text-warning"></i>Followers</small>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+          
+            <!-- First Row [Statistics]-->
+            <h2 class="font-weight-bold mb-2">Latest Statistics</h2>
+            <p class="font-italic text-muted mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+          
+            <div class="row pb-5">
+              <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <!-- Card-->
+                <div class="card rounded shadow-sm border-0">
+                  <div class="card-body p-5"><i class="fa fa-bar-chart fa-2x mb-3 text-primary"></i>
+                    <h5>Products Sales</h5>
+                    <p class="small text-muted font-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <div class="progress rounded-pill">
+                      <div role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;" class="progress-bar rounded-pill"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <!-- Card -->
+                <div class="card rounded shadow-sm border-0">
+                  <div class="card-body p-5"><i class="fa fa-tasks fa-2x mb-3 text-success"></i>
+                    <h5>Completed Tasks</h5>
+                    <p class="small text-muted font-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <div class="progress rounded-pill">
+                      <div role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;" class="progress-bar bg-success rounded-pill"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <!-- Card -->
+                <div class="card rounded shadow-sm border-0">
+                  <div class="card-body p-5"><i class="fa fa-user-circle-o fa-2x mb-3 text-info"></i>
+                    <h5>New Users</h5>
+                    <p class="small text-muted font-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <div class="progress rounded-pill">
+                      <div role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;" class="progress-bar bg-info rounded-pill"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Card -->
+              <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="card rounded shadow-sm border-0">
+                  <div class="card-body p-5"><i class="fa fa-shopping-bag fa-2x mb-3 text-warning"></i>
+                    <h5>New Products</h5>
+                    <p class="small text-muted font-italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <div class="progress rounded-pill">
+                      <div role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;" class="progress-bar bg-warning rounded-pill"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row d-flex justify-content-between">
+                <div class="col-sm-12 col-md-6">
+                    <h6>About</h6>
+                    <p class="text-justify">This is a Sample site made by Mandeep Lamba For IT institute,
+                        It institute is corporation of NTT Course , which is a Teacher Traning Course  
+                    </p>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <h6>Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li> 
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
+                        <a href="#">Mshacker</a>.
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

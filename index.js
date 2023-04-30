@@ -53,3 +53,8 @@ function about(){
     window.location.href = '/aboutus.html'
     
 }
+
+function teacher(){
+    window.location.href = '/teacher.html'
+    
+}
