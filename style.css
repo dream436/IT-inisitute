@@ -78,13 +78,18 @@ nav li:hover {
 .opt {
     background: #141eb6;
     border-top-left-radius: 80%;
-    border-bottom-right-radius: 60%;
+    border-bottom-right-radius: 70%;
     padding-left: 52px;
     padding-right: 52px;
     max-height: 90vh;
+    max-width: 100vw;
     overflow-wrap: hidden;
 }
 
+
+.zoomed:hover{
+    width:  23vw;
+}
 .img_h {
     max-height: 90vh;
 }
@@ -329,6 +334,15 @@ p {
     width: 40%;
     max-width: 60px;
     min-width: 20px;
+    margin-top: 80px;
+}
+
+.lightGallery .image-tile .demo-gallery-poster img:hover {
+    display: block;
+    margin: auto;
+    width: 40%;
+    max-width: 65px;
+    min-width: 25px;
     margin-top: 80px;
 }
 
